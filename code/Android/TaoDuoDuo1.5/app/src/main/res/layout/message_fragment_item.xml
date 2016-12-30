@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_paddingBottomPercent="3%w">
+        <ImageView
+            android:id="@+id/iv_msgIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="10.7%"
+            app:layout_heightPercent="10.7%w"
+            app:layout_marginTopPercent="3%w"
+            app:layout_marginLeftPercent="3.2%w"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/iv_red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="5%w"
+            app:layout_widthPercent="5%w"
+            android:src="@mipmap/red_point"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_marginTopPercent="1.5%w" />
+
+        <TextView
+            android:id="@+id/tv_msgTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="4.1%w"
+            app:layout_marginLeftPercent="16.5%"
+            android:textColor="#000"
+            android:layout_alignTop="@+id/iv_msgIcon"
+            android:text="title" />
+
+        <TextView
+            android:id="@+id/tv_msgSTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="3.1%w"
+            app:layout_marginLeftPercent="16.5%"
+            android:layout_alignBottom="@+id/iv_msgIcon"
+            android:textColor="@color/text_33" />
+
+        <TextView
+            android:id="@+id/tv_msgTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="2.8%w"
+            android:layout_alignParentRight="true"
+            app:layout_marginTopPercent="7.3%w"
+            android:textColor="@color/text_33" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

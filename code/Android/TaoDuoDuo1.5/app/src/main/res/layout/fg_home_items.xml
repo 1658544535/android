@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="47.1%w"
+        app:srcCompat="@mipmap/default_load_long" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_heightPercent="10.63%w">
+
+        <TextView
+            android:id="@+id/tv_good_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="TextView"
+            android:textColor="@color/text_02"
+            app:layout_marginLeftPercent="2.66%w"
+            app:layout_textSizePercent="3.4%w"
+            app:layout_widthPercent="63.29%w" />
+
+        <TextView
+            android:id="@+id/tv_good_xl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:text="TextView"
+            android:textColor="@color/text_04"
+            app:layout_marginRightPercent="2.66%w"
+            app:layout_textSizePercent="2.9%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_heightPercent="12.8%w">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            app:layout_heightPercent="8.94%w"
+            app:layout_widthPercent="95.17%w"
+            app:srcCompat="@mipmap/dd_home_kt" />
+
+        <TextView
+            android:id="@+id/tv_renshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_marginBottomPercent="6.26%w"
+            app:layout_marginLeftPercent="15.04%w"
+            app:layout_textSizePercent="3.5%w" />
+
+        <TextView
+            android:id="@+id/tv_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_renshu"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_renshu"
+            android:maxLines="1"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="3.5%w" />
+
+        <TextView
+            android:id="@+id/tv_yjiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_jiage"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_jiage"
+            android:maxLines="1"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="3.5%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

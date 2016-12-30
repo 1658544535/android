@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_paddingBottomPercent="4.11%w"
+        app:layout_paddingLeftPercent="3.62%w"
+        app:layout_paddingRightPercent="3.62%w"
+        app:layout_paddingTopPercent="4.11%w">
+
+        <TextView
+            android:id="@+id/tv_ddbh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/or_d_bh"
+            android:textColor="@color/text_02"
+            app:layout_textSizePercent="3.38%w" />
+
+        <TextView
+            android:id="@+id/tv_zffs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/or_d_zffs"
+            android:textColor="@color/text_02"
+            app:layout_marginTopPercent="2.66%w"
+            app:layout_textSizePercent="3.38%w" />
+
+        <TextView
+            android:id="@+id/tv_xdsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/or_d_xdsj"
+            android:textColor="@color/text_02"
+            app:layout_marginTopPercent="2.66%w"
+            app:layout_textSizePercent="3.38%w" />
+
+        <TextView
+            android:id="@+id/tv_ctsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/or_d_ctsj"
+            android:textColor="@color/text_02"
+            app:layout_marginTopPercent="2.66%w"
+            app:layout_textSizePercent="3.38%w" />
+
+        <TextView
+            android:id="@+id/tv_fhsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/or_d_fhsj"
+            android:textColor="@color/text_02"
+            app:layout_marginTopPercent="2.66%w"
+            app:layout_textSizePercent="3.38%w" />
+
+        <TextView
+            android:id="@+id/tv_cjsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/or_d_cjsj"
+            android:textColor="@color/text_02"
+            app:layout_marginTopPercent="2.66%w"
+            app:layout_textSizePercent="3.38%w" />
+
+        <TextView
+            android:id="@+id/tv_kdfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/or_d_kdfs"
+            android:textColor="@color/text_02"
+            app:layout_marginTopPercent="2.66%w"
+            app:layout_textSizePercent="3.38%w" />
+
+        <TextView
+            android:id="@+id/tv_ydbh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/or_d_ydbh"
+            android:textColor="@color/text_02"
+            app:layout_marginTopPercent="2.66%w"
+            app:layout_textSizePercent="3.38%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

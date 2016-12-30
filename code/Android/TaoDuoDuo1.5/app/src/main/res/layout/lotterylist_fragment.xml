@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg">
+
+    <ImageView
+        android:id="@+id/layout_rule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@mipmap/default_load_long"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="54.6%w"/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/layout_ivrule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9.18%w"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="4.59%w"
+            app:layout_marginLeftPercent="3.86%w"
+            app:layout_widthPercent="4.59%w"
+            app:srcCompat="@mipmap/dd_gd_lb" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="center_vertical"
+            android:text="@string/c_zzjx"
+            android:textColor="@color/text_01"
+            app:layout_marginLeftPercent="1%w"
+            app:layout_textSizePercent="3.5%w" />
+
+        <TextView
+            android:id="@+id/tv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="@string/tv_rule"
+            android:textColor="@color/text_04"
+            app:layout_marginRightPercent="3.86%w"
+            app:layout_textSizePercent="3.5%w" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="3.3%w">
+
+        <com.qunyu.taoduoduo.pulltorefresh.PullableListView
+            android:id="@+id/lv_lotterylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout>
+
+    <ImageView
+        android:id="@+id/iv_lotteryNull"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="31.5%"
+        app:layout_heightPercent="32.6%w"
+        app:layout_marginTopPercent="41.8%w"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/sellout_noproduct_icon"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_lotteryNull"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        app:layout_marginTopPercent="83.3%w"
+        android:text="暂无售罄的商品"
+        android:textColor="@color/text_20"
+        app:layout_textSizePercent="4.1%w"
+        android:visibility="gone" />
+</com.zhy.android.percent.support.PercentLinearLayout>

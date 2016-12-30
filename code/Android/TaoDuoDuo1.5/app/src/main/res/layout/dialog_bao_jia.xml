@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_heightPercent="31.64%w">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/c_wdgj"
+            android:textColor="@color/text_02"
+            app:layout_marginBottomPercent="19.81%w"
+            app:layout_marginRightPercent="60.39%w"
+            app:layout_textSizePercent="4.59%w" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/dd_cjg_back"
+            app:layout_heightPercent="6.04%w"
+            app:layout_marginRightPercent="2.66%w"
+            app:layout_marginTopPercent="1.7%w"
+            app:layout_widthPercent="6.04%w" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_corner_ctcg_et"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/text_02"
+            android:textColorHint="@color/text_11"
+            app:layout_heightPercent="8.7%w"
+            app:layout_marginBottomPercent="17.63%w"
+            app:layout_marginRightPercent="35.75%w"
+            app:layout_textSizePercent="4.59%w"
+            app:layout_widthPercent="21.98%w" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="1%w"
+            app:layout_marginBottomPercent="17.63%w"
+            app:layout_marginRightPercent="33.09%w"
+            app:layout_widthPercent="1%w"
+            app:srcCompat="@color/text_11" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_corner_ctcg_et"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/text_02"
+            android:textColorHint="@color/text_11"
+            app:layout_heightPercent="8.7%w"
+            app:layout_marginBottomPercent="17.63%w"
+            app:layout_marginRightPercent="20.29%w"
+            app:layout_textSizePercent="4.59%w"
+            app:layout_widthPercent="11.11%w" />
+
+        <ImageView
+            android:id="@+id/iv_tj"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"
+            app:layout_heightPercent="9.42%w"
+            app:layout_marginBottomPercent="4.35%w"
+            app:layout_widthPercent="26.81%w"
+            app:srcCompat="@mipmap/dd_cjg_tj" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

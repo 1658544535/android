@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/search_header"
+        app:layout_marginTopPercent="2.3%w"></include>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/layout_searchText2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/base_bg">
+        <TextView
+            android:id="@+id/tv_searchCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="3.3%w"
+            app:layout_marginTopPercent="4.5%w"
+            app:layout_marginLeftPercent="3.5%"
+            android:textColor="#7f7f7f"
+            android:text="共找到**条相关结果"/>
+
+
+        <com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.qunyu.taoduoduo.pulltorefresh.PullableGridView
+                android:id="@+id/gv_s"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:horizontalSpacing="10dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:paddingTop="10dp"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp" />
+        </com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/layout_searchText1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_paddingTopPercent="3.6%w"
+        android:background="@color/base_bg"
+        >
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="3.5%w"
+        app:layout_widthPercent="3.5%"
+        app:layout_marginLeftPercent="3.6%"
+        android:src="@mipmap/search_icon"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="3.1%w"
+            android:text="历史搜索"
+            android:textColor="#999999"
+            app:layout_marginLeftPercent="8.1%"
+           />
+        <ImageView
+            android:id="@+id/iv_history_clean"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="5%w"
+            app:layout_widthPercent="5%"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/search_history_clean"
+            app:layout_marginRightPercent="6%"/>
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/fl_searchHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            zhy:max_select="-1"
+            android:layout_below="@+id/iv_history_clean"
+            android:padding="10dp"
+           >
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_paddingBottomPercent="13.85%w">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<include
+                    android:id="@+id/head_layout"
+                    layout="@layout/activity_c_goods_detail_top_ing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />-->
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="2.5%w">
+
+                <!-- <include
+                     android:id="@+id/list_layout"
+                     layout="@layout/activity_c_goods_detail_cy"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content" />-->
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <WebView
+                android:id="@+id/wbv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="2.5%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </ScrollView>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:layout_heightPercent="13.85%w">
+
+        <!-- <include
+             android:id="@+id/bottom_layout"
+             layout="@layout/activity_c_goods_detail_bootom_huodongjw"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" />-->
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

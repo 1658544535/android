@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    >
+
+    <include
+        android:id="@+id/head_layout"
+        layout="@layout/base"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qunyu.taoduoduo.pulltorefresh.PullableListView
+            android:id="@+id/lv_t"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+    </com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout>
+    <TextView
+        android:id="@+id/zw"
+        android:layout_width="wrap_content"
+        android:paddingTop="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="品类齐聚 新品来袭\n猜价好礼 静候良机" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

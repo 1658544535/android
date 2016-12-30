@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    >
+    <com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginTopPercent="3.3%w">
+        <com.qunyu.taoduoduo.pulltorefresh.PullableListView
+            android:id="@+id/lv_mygroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f4f8fb"
+            android:dividerHeight="8dp"
+            android:divider="@color/base_bg"
+            ></com.qunyu.taoduoduo.pulltorefresh.PullableListView>
+    </com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout>
+
+    <ImageView
+        android:id="@+id/iv_orderNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/dd_dd_kb"
+        app:layout_widthPercent="50%w"
+        app:layout_heightPercent="50%w"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="38%w"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_orderNull"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="您的记录为空"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="2%"
+        app:layout_textSizePercent="4.5%w"
+        android:layout_below="@+id/iv_orderNull"
+        android:textColor="@color/text_07"
+        android:visibility="gone" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/head_layout4"
+        layout="@layout/activity_group_detail_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.qunyu.taoduoduo.widget.ObservableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/head_layout4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/activity_group_detail_rule_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/head_layout1"
+                layout="@layout/activity_group_detail_good"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_heightPercent="3.05%w"/>
+
+            <TextView
+                android:id="@+id/tv_group_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                app:layout_paddingTopPercent="5.63%w"
+                app:layout_paddingLeftPercent="5.63%w"
+                app:layout_paddingRightPercent="5.63%w"
+                app:layout_textSizePercent="3.62%w" />
+
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_grouppeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                />
+
+
+            <include
+                android:id="@+id/head_layout2"
+                layout="@layout/activity_group_detail_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_showall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="查看全部团详情▼"
+                app:layout_paddingPercent="4.02%w" />
+
+            <include
+                android:id="@+id/head_layout5"
+                layout="@layout/activity_group_detail_allpeople"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/head_layout3"
+                layout="@layout/activity_group_detail_guessyourlike"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.qunyu.taoduoduo.widget.ObservableScrollView>
+
+    <ImageView
+        android:id="@+id/iv_rule"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/agd_ptgz" />
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/pin"
+        app:layout_heightPercent="9%w"
+        android:visibility="invisible"
+        android:layout_above="@+id/head_layout4"
+        app:layout_marginPercent="3%w"
+        app:layout_widthPercent="9%w" />
+    <ImageView
+        android:id="@+id/iv_hongbao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/iv_top"
+        android:src="@mipmap/merry_hb_anniu"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        />
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

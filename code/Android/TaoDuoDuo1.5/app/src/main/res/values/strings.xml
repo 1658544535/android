@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">拼得好</string>
+    <string name="title_bottom_bar">底部TAB切换</string>
+    <string name="title_add_photo">图像选择器</string>
+    <string name="title_choose_album">相册选择器</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="list_empty">没有更多的数据</string>
+
+    <string name="single_touchimageview">Single TouchImageView</string>
+    <string name="mirror_touchimageview">Mirroring Example</string>
+    <string name="viewpager_example">ViewPager Example</string>
+    <string name="switch_image_example">Switch Image Example</string>
+    <string name="switch_scaletype_example">Switch ScaleType Example</string>
+    <string name="get_scroll_position">getScrollPosition():</string>
+    <string name="get_zoomed_rect">getZoomedRect():</string>
+    <string name="get_current_zoom">getCurrentZoom():</string>
+    <string name="mirroring_text">All touch gestures applied to one TouchImageView will be mirrored on the other.</string>
+    <string name="swipe_viewpager">Swipe left or right to test ViewPager.</string>
+    <string name="switch_image_text">Click TouchImageView to cycle through image resources. Note that the zoom state is maintained.</string>
+    <string name="switch_scaletype_text">Click TouchImageView to cycle through supported ScaleTypes.</string>
+    <string name="c_color">请选择规格和套餐类型</string>
+    <string name="c_number">购买数量</string>
+    <string name="c_qd">确定</string>
+
+    <!--个人中心-->
+    <string name="my_coupons">我的优惠券</string>
+    <string name="my_group">我的拼团</string>
+    <string name="my_caijia">我的猜价</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_address">收货地址</string>
+    <string name="my_choujian">我的抽奖</string>
+    <string name="kefu">联系客服</string>
+    <string name="settings">设置</string>
+    <string name="zhoubian">周边</string>
+    <string name="about_pdh">关于拼得好</string>
+    <string name="about_pdh_download">扫码下载拼得好客户端</string>
+    <!--订单确认-->
+    <string name="coa_dz">您的地址信息为空，点击进行添加</string>
+    <string name="coa_cou">使用优惠券</string>
+    <string name="coa_nocou">暂无该类优惠券</string>
+    <string name="buyer_message">买家留言</string>
+    <string name="trading_instructions">对本次交易的说明</string>
+
+
+    <!--登录-->
+    <string name="dl">登录</string>
+    <string name="dl_phone">手机号码</string>
+    <string name="dl_yan">验证码</string>
+    <string name="dl_fayan">发送验证码</string>
+    <string name="get_verify">获取验证码</string>
+    <string name="qq">QQ</string>
+    <string name="sjhdl">手机号登录</string>
+    <string name="sina">微博</string>
+    <string name="send_success">验证码已发送</string>
+    <string name="phoneNum">手机号</string>
+    <string name="password">密码</string>
+    <!--第三方登录-->
+    <string name="dl3">选择登录方式</string>
+    <string name="dl3_qt">使用其他方式登录</string>
+    <!--团免列表-->
+    <string name="tm_xz">选择一个商品免费开团，成团后可收货</string>
+    <!--商品详情-->
+    <string name="gd_gm">我想购买</string>
+    <string name="gd_gmsp">购买商品</string>
+    <string name="gd_cy">我要参与</string>
+    <string name="gd_ckgd">查看更多</string>
+    <string name="gd_lwl">来晚了！活动已结束</string>
+    <string name="gd_nx">耐心等待开奖结果！</string>
+    <string name="gd_yhj">恭喜您获得N元\n抵用卷该优惠卷于**过期，点击马上购买</string>
+    <string name="gd_txdi">活动结束，恭喜您已得奖！\n填写收货信息</string>
+    <string name="gd_bj">您的报价为： ￥0.00 | 等待揭晓</string>
+    <string name="gd_mr">￥0.00\n单独购买</string>
+    <string name="gd_pt">￥0.00\n2人成团</string>
+    <string name="gd_ct">欢迎你直接参与其他小伙伴发起的拼团</string>
+    <string name="gd_ctbtn">参团 ></string>
+    <string name="gd_tz">团长必中，团员抽奖</string>
+    <string name="gd_spysq">商品已售罄</string>
+    <!--拼团结果-->
+    <string name="pt_succes">恭喜你，参团成功！</string>
+    <string name="pt_succes_f">小伙伴已集结完毕，商品会尽快向各位发货，请耐心等待.</string>
+    <string name="pt_fail">很遗憾，组团失败！</string>
+    <string name="pt_xq_fail">很遗憾，该团已过期！</string>
+    <string name="pt_fail_f">拼团期内未达到成团人数，系统会在1-2个工作日内，按原路自动退款至各位成员.</string>
+    <string name="pt_ing">您终于来了，快参团吧！</string>
+    <string name="pt_good">拼团商品</string>
+    <string name="pt_cy">参团小伙伴</string>
+    <string name="pt_end">本团已结束</string>
+    <string name="pt_jr">已有2人参团，还差1人，快加入我们吧.</string>
+    <string name="pt_tz">团长</string>
+    <string name="pt_ct">5人成团 当前团2人 ￥29.9 ￥59</string>
+    <string name="kt_success">恭喜你，开团成功！</string>
+    <string name="kt_yct">您来晚了，已经成团!</string>
+    <string name="kt_rsym">来晚了，该团人数已满！</string>
+    <string name="kt_yct_content">赶紧点击“我要开团”，疯抢起来吧！</string>
+    <string name="kt_rsym_content">赶紧点击“另开团”，疯抢起来吧！</string>
+    <string name="kt_mskt">马上开团</string>
+    <string name="kt_js">结束</string>
+    <string name="kt_btjy">本团将于</string>
+    <string name="kt_fenhao">:</string>
+    <string name="kt_souqing">组团失败，商品已售罄</string>
+
+    <!--猜价格-->
+    <string name="c_zzjx">正在进行中</string>
+    <string name="c_time">距离结束：</string>
+    <string name="c_jg">价格区间：</string>
+    <string name="c_lwl">来晚啦！该活动已经结束</string>
+    <string name="c_kj">即将开奖，请耐心等待</string>
+    <string name="c_more">点击查看更多</string>
+    <string name="c_shr">收货人：</string>
+    <string name="c_lxfs">联系方式：</string>
+    <string name="c_shdz">收货地址：</string>
+    <string name="c_qshr">请输入收货人</string>
+    <string name="c_qlxfs">请输入联系方式</string>
+    <string name="c_qshdz">请输入收货地址</string>
+    <string name="c_wdgj">我的估价：</string>
+    <string name="c_xcyz">需参与者才可以看到其他参与者信息</string>
+
+    <!--参与用户列表-->
+    <string name="cy_g">共有N位用户参与此活动</string>
+    <string name="cy_n">您的出价信息如下：</string>
+    <string name="cy_more">更多</string>
+    <string name="cy_yd">一等奖</string>
+    <string name="cy_ed">二等奖</string>
+    <string name="cy_sd">三等奖</string>
+    <string name="cy_yx">以下用户赢得商品</string>
+    <!--订单-->
+    <string name="or_sp">拼团商品</string>
+    <string name="or_dzf">待支付</string>
+    <string name="or_dsh">待收货</string>
+    <string name="or_qx">取消</string>
+    <string name="or_qzf">去支付</string>
+    <string name="or_pting">拼团中，差N人</string>
+    <string name="or_ck">查看</string>
+    <string name="or_yqhy">邀请好友拼团</string>
+    <string name="or_jyqx">交易已取消</string>
+    <string name="or_ywc">已完成</string>
+    <string name="or_ckwl">查看物流</string>
+    <string name="or_ljpj">立即评价</string>
+    <string name="or_yct">已成团，待发货</string>
+    <string name="or_ycsh">延长收货</string>
+    <string name="or_qdsh">确认收货</string>
+    <string name="or_sqtk">申请退款</string>
+    <!--订单详情-->
+    <string name="or_d_ck">查看团详情</string>
+    <string name="or_d_dfh">已成团，待发货</string>
+    <string name="or_d_dsh">配送中</string>
+    <string name="or_d_pting">拼团中</string>
+    <string name="or_d_wcting">未成团，退款中</string>
+    <string name="or_d_wcts">未成团，退款成功</string>
+    <string name="or_d_yqs">已签收</string>
+    <string name="or_d_bh">订单编号：</string>
+    <string name="or_d_zffs">支付方式：</string>
+    <string name="or_d_xdsj">下单时间：</string>
+    <string name="or_d_ctsj">成团时间：</string>
+    <string name="or_d_fhsj">发货时间：</string>
+    <string name="or_d_cjsj">成交时间：</string>
+    <string name="or_d_kdfs">快递方式：</string>
+    <string name="or_d_ydbh">运单编号：</string>
+    <string name="or_d_wx">微信支付</string>
+    <string name="or_d_zfb">支付宝支付</string>
+    <string name="or_d_qq">QQ钱包</string>
+    <!--秒杀-->
+    <string name="ms_ks">正在进行中</string>
+    <string name="ms_sw">查看今天已售罄商品</string>
+    <!--0.1抽奖规则-->
+    <string name="rule_content">活动规则：\n1、拼团成功,立即开奖。团长会获得该奖品，并从成团的订单中再\n抽取
+    一个幸运订单号，获得奖品。\n2、每人只有一次开团和参团的机会。</string>
+    <string name="tv_rule">活动规则</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sai_dan">SaiDanActivity</string>
+
+    <!--1.21团详情-->
+    <string name="txq_sq">组团失败，商品已售罄~</string>
+    <string name="txq_yct">您来晚了，已成团~</string>
+    <string name="txq_ptsb">拼团期内未达到成团人数，系统会在1~2个工作日内，按原路自动退款至各位成员~</string>
+    <string name="txq_gdpt">更多拼团</string>
+    <string name="txq_ymq">一毛钱能干嘛？？点我偷偷告诉你>></string>
+
+    <string name="see_more">查看更多</string>
+    <string name="search_product">搜索商品</string>
+
+    <!--tab消息Fragment-->
+    <string name="message">消息</string>
+
+    <string name="zhoubian_content">亲，您的优惠券已兑换成功!\n您可到个人中心-我的优惠券 查看</string>
+
+
+</resources>

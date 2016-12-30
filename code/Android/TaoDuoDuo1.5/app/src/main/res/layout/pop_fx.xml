@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ptrf_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_paddingBottomPercent="2%w"
+        app:layout_paddingLeftPercent="2%w"
+        app:layout_paddingRightPercent="2%w">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@mipmap/new_t3_fxy"
+            android:orientation="horizontal"
+            app:layout_heightPercent="44%w"
+            app:layout_marginBottomPercent="1.33%w"
+            app:layout_paddingTopPercent="10%w">
+
+            <ImageView
+                android:id="@+id/iv_wb"
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:src="@mipmap/new_t3_wb"
+                app:layout_heightPercent="21%w" />
+
+            <ImageView
+                android:id="@+id/iv_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@mipmap/new_t3_wx"
+                app:layout_heightPercent="21%w" />
+
+            <ImageView
+                android:id="@+id/iv_pyq"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@mipmap/new_t3_pyq"
+                app:layout_heightPercent="21%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@mipmap/new_t3_qx"
+            app:layout_heightPercent="13.33%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

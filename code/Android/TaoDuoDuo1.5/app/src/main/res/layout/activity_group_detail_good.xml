@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_product"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="20.53%w"
+            app:layout_marginStartPercent="3.05%w"
+            app:layout_marginTopPercent="4.19%w"
+            app:layout_widthPercent="20.53%w" />
+
+        <TextView
+            android:id="@+id/tv_grouptag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_product"
+            android:background="@drawable/red_shape_corner"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:textColor="@color/base_red"
+            app:layout_marginLeftPercent="3.78%w"
+            app:layout_marginTopPercent="6.31%w"
+            app:layout_textSizePercent="2.5%w" />
+
+        <TextView
+            android:id="@+id/tv_pname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_product"
+            android:ellipsize="end"
+            android:gravity="top|start"
+            android:lines="2"
+            android:textColor="@color/text_02"
+            app:layout_marginLeftPercent="3.78%w"
+            app:layout_marginRightPercent="5%w"
+            app:layout_marginTopPercent="5.31%w"
+            app:layout_textSizePercent="4%w" />
+
+        <TextView
+            android:id="@+id/tv_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_product"
+            android:layout_toEndOf="@+id/iv_product"
+            android:maxLines="1"
+            android:textColor="@color/text_01"
+            app:layout_marginLeftPercent="3.78%w"
+            app:layout_textSizePercent="4%w" />
+
+        <TextView
+            android:id="@+id/tv_sellprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_jiage"
+            android:maxLines="1"
+            android:textColor="@color/text_09"
+            app:layout_marginBottomPercent="1%w"
+            app:layout_textSizePercent="3%w" />
+
+        <TextView
+            android:id="@+id/tv_zjxq"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@+id/iv_product"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:background="@mipmap/txq_zjxq"
+            android:visibility="invisible"
+            app:layout_heightPercent="6.28%w"
+            app:layout_widthPercent="17.87%w" />
+
+        <ImageView
+            android:id="@+id/iv_tag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@+id/iv_product"
+            android:layout_toStartOf="@+id/tv_zjxq"
+            app:layout_heightPercent="16.34%w"
+            app:layout_marginRightPercent="1.61%w"
+            app:layout_widthPercent="16.34%w" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/iv_product"
+            app:layout_heightPercent="4.1%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

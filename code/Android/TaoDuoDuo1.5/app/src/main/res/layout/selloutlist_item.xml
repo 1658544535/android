@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="35.4%w"
+        app:layout_paddingPercent="1.8%w">
+
+        <ImageView
+            android:id="@+id/iv_selloutLogo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="32.4%w"
+            app:layout_widthPercent="32.4%" />
+
+        <TextView
+            android:id="@+id/tv_selloutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="58.2%"
+            app:layout_textSizePercent="3.3%w"
+            android:textColor="@color/text_05"
+            android:layout_toRightOf="@+id/iv_selloutLogo"
+            app:layout_marginLeftPercent="2.4%w"
+            android:lines="2"
+            app:layout_marginTopPercent="2.4%w" />
+
+        <TextView
+            android:id="@+id/tv_selloutPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="4.4%w"
+            android:layout_toRightOf="@+id/iv_selloutLogo"
+            app:layout_marginLeftPercent="2.4%w"
+            app:layout_marginTopPercent="24.4%w"
+            android:textColor="@color/text_01"
+            android:text="456" />
+
+        <TextView
+            android:id="@+id/tv_selloutAlonePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="2.8%w"
+            android:layout_toRightOf="@+id/tv_selloutPrice"
+            app:layout_marginTopPercent="25.7%w"
+            android:textColor="@color/text_20"
+            android:text="￥230"
+            app:layout_marginLeftPercent="1.5%w" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_widthPercent="8%w"
+            app:layout_textSizePercent="2.8%w"
+            android:layout_toRightOf="@+id/tv_selloutPrice"
+            app:layout_marginTopPercent="27.5%w"
+            android:background="@color/text_20"
+            app:layout_marginLeftPercent="1.8%w" />
+
+        <ImageView
+            android:id="@+id/iv_selloutBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="6.6%w"
+            app:layout_widthPercent="14.5%"
+            android:layout_alignParentRight="true"
+            app:layout_marginTopPercent="22.4%w"
+            app:layout_marginRightPercent="1.8%w"
+            android:src="@mipmap/sellout_btn_icon" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

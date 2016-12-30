@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_heightPercent="9.18%w">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="4.59%w"
+            app:layout_marginLeftPercent="3.86%w"
+            app:layout_widthPercent="4.59%w"
+            app:srcCompat="@mipmap/dd_gd_lb" />
+
+        <TextView
+            android:id="@+id/tv_rs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="@string/cy_g"
+            android:textColor="@color/text_08"
+            app:layout_marginLeftPercent="1%w"
+            app:layout_textSizePercent="3.5%w" />
+
+        <TextView
+            android:id="@+id/tv_cy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="@string/c_more"
+            android:textColor="@color/text_08"
+            app:layout_marginRightPercent="3.86%w"
+            app:layout_textSizePercent="3.5%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/base_line"
+        app:layout_marginLeftPercent="3.86%w"
+        app:layout_marginRightPercent="3.86%w" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="4.11%w" />
+
+        <include
+            android:id="@+id/list_layout1"
+            layout="@layout/activity_ping_tuan_jie_guo_chen_yuan_list_item_cy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/list_layout2"
+            layout="@layout/activity_ping_tuan_jie_guo_chen_yuan_list_item_cy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/list_layout3"
+            layout="@layout/activity_ping_tuan_jie_guo_chen_yuan_list_item_cy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/list_layout4"
+            layout="@layout/activity_ping_tuan_jie_guo_chen_yuan_list_item_cy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/list_layout5"
+            layout="@layout/activity_ping_tuan_jie_guo_chen_yuan_list_item_cy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

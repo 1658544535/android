@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+
+    <com.allure.lbanners.LMBanners
+        android:id="@+id/banners"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@mipmap/default_load_long"
+        app:auto_play="true"
+        app:canLoop="true"
+        app:durtion="5000"
+        app:horizontal_transitionEffect="accordion"
+        app:indicator_position="bottom_mid"
+        app:indicator_select="@drawable/page_indicator_select"
+        app:indicator_unselect="@drawable/page_indicator_unselect"
+        app:isVertical="false"
+        app:layout_heightPercent="54.68%w"
+        app:scroll_duration="66666" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="23.7%w"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/layout_freedrawlist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="55%w"
+                app:layout_widthPercent="55%"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="13.5%w"
+                android:src="@mipmap/merry_free_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="14.58%w"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="75.35%w"
+                android:text="免费试用"
+                android:textColor="@color/text_30" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/layout_caijiage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="55%w"
+                app:layout_widthPercent="55%"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="13.5%w"
+                android:src="@mipmap/merry_caijia_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="14.58%w"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="75.35%w"
+                android:text="猜价格"
+                android:textColor="@color/text_30" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/layout_99temai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="55%w"
+                app:layout_widthPercent="55%"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="13.5%w"
+                android:src="@mipmap/merry_ninenine_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="14.58%w"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="75.35%w"
+                android:text="9.9特卖"
+                android:textColor="@color/text_30" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/layout_timemiaosha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="55%w"
+                app:layout_widthPercent="55%"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="13.5%w"
+                android:src="@mipmap/merry_zhangshang_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="14.58%w"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="75.35%w"
+                android:text="掌上秒杀"
+                android:textColor="@color/text_30" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/layout_0.1miaosha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="55%w"
+                app:layout_widthPercent="55%"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="13.5%w"
+                android:src="@mipmap/merry_lottery_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="14.58%w"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="75.35%w"
+                android:text="抽奖团"
+                android:textColor="@color/text_30" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@mipmap/dd_home_ptsp"
+        app:layout_heightPercent="12.32%w"
+        app:layout_marginTopPercent="2.42%w">
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

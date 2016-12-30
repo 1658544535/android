@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="24.7%w"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/tv_couponName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="4%w"
+            android:text="团长免单券"
+            android:textColor="@color/text_01"
+            app:layout_marginLeftPercent="3.5%w"
+            app:layout_marginTopPercent="3.5%w"/>
+        <TextView
+            android:id="@+id/tv_jiandiaojine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="3.6%w"
+            android:layout_below="@+id/tv_couponName"
+            app:layout_marginTopPercent="3.5%w"
+            app:layout_marginLeftPercent="3.5%w"
+            android:text="买指定商品立减元"
+            android:textColor="#3E3A39"/>
+        <TextView
+            android:id="@+id/tv_effective_Dates"
+            android:layout_below="@+id/tv_jiandiaojine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="3.7%w"
+            app:layout_marginLeftPercent="3.5%"
+            android:text="有效期:"
+            android:textColor="#949494"/>
+
+        <TextView
+            android:id="@+id/tv_m"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="30%"
+            android:background="@mipmap/coupon_red"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="7%w"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="￥0" />
+        <!--<TextView-->
+        <!--android:id="@+id/tv_m"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_textSizePercent="7%w"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textStyle="bold"-->
+        <!--android:text="￥0"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--app:layout_marginRightPercent="11%"/>-->
+        <ImageView
+            android:id="@+id/iv_overduebg2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="30%"
+            android:src="@mipmap/over_due"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

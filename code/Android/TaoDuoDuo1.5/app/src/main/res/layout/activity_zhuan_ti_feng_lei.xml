@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zhuan_ti_feng_lei"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qunyu.taoduoduo.activity.ZhuanTiFengLeiActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/hs_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabBackground="@null"
+            app:tabIndicatorColor="@color/text_01"
+            app:tabIndicatorHeight="1dp"
+            app:tabSelectedTextColor="@color/text_01" />
+    </HorizontalScrollView>
+
+    <com.andbase.library.view.tabpager.AbTabPagerView
+        android:id="@+id/tabPagerView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+</com.zhy.android.percent.support.PercentLinearLayout>

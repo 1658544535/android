@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_deng_lu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="51%w"
+        android:background="@mipmap/login_banner_icon">
+
+        <TextView
+            android:id="@+id/tv_loginCancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="4.1%"
+            app:layout_heightPercent="4.1%w"
+            app:layout_marginTopPercent="9%w"
+            app:layout_marginRightPercent="6.6%w"
+            android:background="@mipmap/login_close"
+            android:layout_alignParentRight="true" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="73%w"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_heightPercent="11.6%w"
+        app:layout_marginTopPercent="12%w"
+        android:layout_gravity="center_horizontal"
+        app:layout_paddingLeftPercent="3.38%w"
+        app:layout_paddingRightPercent="3.38%w">
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:inputType="phone"
+            android:maxEms="11"
+            android:textColor="@color/text_31"
+            android:background="@null"
+            app:layout_textSizePercent="4.6%w"
+            android:hint="@string/phoneNum"
+            android:textColorHint="@color/text_31" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="74%w"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_01"
+        android:layout_gravity="center_horizontal" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_heightPercent="11.6%w"
+        app:layout_paddingLeftPercent="3.38%w"
+        app:layout_paddingRightPercent="3.38%w"
+        app:layout_widthPercent="73%w"
+        android:layout_gravity="center_horizontal">
+
+
+        <EditText
+            android:id="@+id/et_captcha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:inputType="number"
+            android:background="@null"
+            android:maxLength="6"
+            android:textColor="@color/text_31"
+            android:textColorHint="@color/text_31"
+            android:hint="@string/dl_yan"
+            app:layout_textSizePercent="4.6%w" />
+
+        <TextView
+            android:id="@+id/tv_sendVerifyCode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/get_verify"
+            android:textColor="@color/text_32"
+            app:layout_marginPercent="1%w"
+            app:layout_textSizePercent="4.6%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        app:layout_widthPercent="74%w"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_01"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_corner_dlbtn"
+        android:gravity="center"
+        android:text="@string/dl"
+        android:textColor="@color/white"
+        app:layout_heightPercent="10.9%w"
+        app:layout_widthPercent="73%w"
+        app:layout_marginTopPercent="14.5%w"
+        app:layout_textSizePercent="3.6%w"
+        android:layout_gravity="center_horizontal" />
+</com.zhy.android.percent.support.PercentLinearLayout>

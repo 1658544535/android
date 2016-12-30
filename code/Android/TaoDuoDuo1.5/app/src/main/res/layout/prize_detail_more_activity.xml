@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/layout_proDetailm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="35.5%w"
+        app:layout_paddingPercent="1.8%w"
+        app:layout_marginTopPercent="3.3%w"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_prizeDetailLogom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="32.4%w"
+            app:layout_widthPercent="32.4%"
+            android:src="@mipmap/default_load" />
+
+        <TextView
+            android:id="@+id/tv_prizeDetailTitlem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="58.2%"
+            app:layout_textSizePercent="3.3%w"
+            android:textColor="@color/text_05"
+            android:layout_toRightOf="@+id/iv_prizeDetailLogom"
+            app:layout_marginLeftPercent="2.4%w"
+            android:lines="2"
+            android:ellipsize="end"
+            app:layout_marginTopPercent="2.4%w" />
+
+        <TextView
+            android:id="@+id/tv_prizeDetailPricem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="4.4%w"
+            android:layout_toRightOf="@+id/iv_prizeDetailLogom"
+            app:layout_marginLeftPercent="2.4%w"
+            app:layout_marginTopPercent="13.6%w"
+            android:textColor="@color/text_01"
+            android:text="￥0.1" />
+
+
+        <TextView
+            android:id="@+id/tv_openedPrizem"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="6.6%w"
+            app:layout_widthPercent="50.8%"
+            android:layout_toRightOf="@+id/iv_prizeDetailLogom"
+            app:layout_marginTopPercent="22.4%w"
+            app:layout_marginLeftPercent="7.2%w"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="3.8%w"
+            android:gravity="center"
+            android:background="@drawable/shap_corner_red" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_marginTopPercent="3.3%w">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="9.2%w">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="4.5%w"
+                app:layout_widthPercent="4.5%"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/tip_icon"
+                app:layout_marginLeftPercent="2.7%w" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="3.1%w"
+                android:layout_centerVertical="true"
+                android:text="获奖用户列表"
+                app:layout_marginLeftPercent="9.9%w"
+                android:textColor="@color/text_13" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_widthPercent="94%w"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/line_01"></View>
+
+        <com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent="4.5%w">
+
+            <com.qunyu.taoduoduo.pulltorefresh.PullableExpandableListView
+                android:id="@+id/elv_prizeDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.qunyu.taoduoduo.pulltorefresh.PullableExpandableListView>
+        </com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:id="@+id/tv_loadmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_textSizePercent="2.8%w"
+        android:text="下拉显示更多"
+        app:layout_marginTopPercent="16.6%w"
+        android:layout_gravity="center_horizontal" />
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

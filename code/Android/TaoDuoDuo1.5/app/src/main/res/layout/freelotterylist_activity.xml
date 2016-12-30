@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/lottery_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="13.1%w"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base_line"></View>
+
+        <ImageView
+            android:id="@+id/iv_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="6.2%"
+            app:layout_heightPercent="6.6%w"
+            app:layout_marginLeftPercent="24.4%"
+            app:layout_marginTopPercent="1.9%w"
+            android:src="@mipmap/prize_ing_icon" />
+
+        <TextView
+            android:id="@+id/tv_ing"
+            android:layout_below="@+id/iv_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="2.8%w"
+            app:layout_marginTopPercent="0.7%w"
+            android:text="正在进行中"
+            app:layout_marginLeftPercent="20.2%" />
+
+        <ImageView
+            android:id="@+id/iv_ckwq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="6.2%"
+            app:layout_heightPercent="6.6%w"
+            app:layout_marginLeftPercent="71.4%"
+            app:layout_marginTopPercent="1.9%w"
+            android:src="@mipmap/chakan_wanqi_icon" />
+
+        <TextView
+            android:id="@+id/tv_ckwq"
+            android:layout_below="@+id/iv_ckwq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="2.8%w"
+            app:layout_marginTopPercent="0.5%w"
+            android:text="查看往期"
+            app:layout_marginLeftPercent="69.2%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

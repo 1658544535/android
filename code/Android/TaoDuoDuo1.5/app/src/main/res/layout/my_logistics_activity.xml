@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f8fb">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="16.6%w"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/expressType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="3.6%w"
+            app:layout_marginLeftPercent="2.9%w"
+            app:layout_marginTopPercent="3.8%w"
+            android:textColor="#1C1C1C"
+            android:text="物流公司："
+            />
+        <TextView
+            android:id="@+id/expressNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="2.8%w"
+            app:layout_marginLeftPercent="2.9%w"
+            app:layout_marginTopPercent="2.4%w"
+            android:textColor="#555555"
+            android:text="运单编号："
+            />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="2.6%w"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="9%w"
+            app:layout_textSizePercent="3.3%w"
+            app:layout_marginLeftPercent="2.9%w"
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:text="订单跟踪"
+            android:textColor="#1c1c1c"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#e9e9e9"
+            ></View>
+        <ListView
+            android:id="@+id/lv_logistics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_paddingTopPercent="2.4%w"
+            android:background="#ffffff"
+            android:divider="@null">
+
+        </ListView>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    
+
+</com.zhy.android.percent.support.PercentLinearLayout>

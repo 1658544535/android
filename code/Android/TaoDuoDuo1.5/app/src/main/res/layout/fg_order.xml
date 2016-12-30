@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/base_line" />
+
+    <com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+
+        <com.qunyu.taoduoduo.pulltorefresh.PullableListView
+            android:id="@+id/lv_t"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@mipmap/dd_dd_kbd"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+
+    </com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
