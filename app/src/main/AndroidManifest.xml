@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qunyu.taoduoduo">
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 开机启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".global.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme">
+        <activity
+            android:name=".activity.StartActivity"
+            android:theme="@style/TranslucentStatusTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".base.MainActivity" />
+        <activity
+            android:name=".activity.TabActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activity.CouponsActivity" />
+        <activity android:name=".activity.MyCaiJiaActivity" />
+        <activity android:name=".activity.MyAddressActivity" />
+        <activity android:name=".activity.LogisticsActivity" />
+        <activity android:name=".activity.AddPhotoActivity" />
+        <activity android:name=".activity.CropImageActivity" />
+        <activity android:name=".activity.AfterSaleActivity" />
+        <activity android:name=".activity.MyCollectListActivity" />
+        <activity android:name=".activity.ApplyRefundActivity" />
+        <activity
+            android:name=".activity.ApplyRefundSelectListActivity"
+            android:theme="@style/DialogStyleBottom2" />
+        <activity android:name=".activity.WriteOrderNumActivity" />
+        <activity
+            android:name=".activity.SelectPicActivity"
+            android:theme="@style/DialogStyleBottom" />
+        <activity android:name=".activity.MyGroupListActivity" />
+        <activity android:name=".activity.RefundDetailsActivity" />
+        <activity android:name=".activity.WaitPayActivity" />
+        <activity android:name=".activity.SellOutListActivity" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57fe2c34e0f55aa2ff001725" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="92bf34cdeb54da93e1abc0b0206a4931" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="PinDeHaoAndroid" />
+
+        <activity android:name=".activity.PhoneLoginActivity" />
+
+        <service android:name=".service.CountDownTimerService" />
+
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.XuanZhePtActivity" />
+        <activity android:name=".activity.TuanMianActivity" />
+        <activity android:name=".activity.GoodsDetailActivity" />
+        <activity android:name=".activity.PingTuanJieGuoActivity" />
+        <activity android:name=".activity.CaiGoodsDetailActivity" />
+        <activity android:name=".activity.CanYuYongHuActivity" />
+        <activity android:name=".activity.OrdersActivity" />
+        <activity android:name=".activity.OrderDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx86d84e4f49f10c88" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ConfirmOrderActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx86d84e4f49f10c88" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CitiesActivity"
+            android:theme="@style/DialogStyleBottom2" />
+        <activity android:name=".activity.ValidUserCouponsActivity" />
+        <activity android:name=".activity.ZhuanTiFengLeiActivity" />
+        <activity android:name=".activity.SpecialDetailActivity" />
+        <activity android:name=".activity.CaiJiaGeActivity" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity android:name=".activity.MiaoShaTabActivity" />
+        <activity
+            android:name=".activity.SaiDanActivity"
+            android:label="@string/title_activity_sai_dan"
+            android:theme="@style/AppBaseTheme" />
+        <activity android:name=".activity.PinLunActivity" />
+        <activity android:name=".activity.PinLunSuActivity" />
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".pictouch.SingleTouchImageViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".pictouch.MirroringExampleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".pictouch.ViewPagerExampleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".pictouch.SwitchImageExampleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".pictouch.SwitchScaleTypeExampleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- v1.2 -->
+        <activity android:name=".activity.LotteryListActivity"></activity>
+        <activity android:name=".activity.PrizeDetailActivity"></activity>
+        <activity android:name=".activity.PrizeDetailMoreActivity"></activity>
+        <activity android:name=".activity.ZoneActivity" />
+        <activity android:name=".activity.TypeTabActivity" />
+
+        <receiver
+            android:name=".receiver.JPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <category android:name="com.qunyu.taoduoduo" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.PhotoviewActivity"
+            android:theme="@style/Transparent" />
+        <activity android:name=".activity.FreeLotteryListActivity" />
+        <activity android:name=".activity.GroupDetailActivity" />
+        <activity
+            android:name=".activity.SearchTextActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <!-- bugly -->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".activity.EventActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogActivity" />
+        <activity android:name=".activity.UserOrderNoticeActivity" />
+        <activity android:name=".activity.MyDrawsActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.AboutPdhActivity" />
+        <activity android:name=".activity.EditUserInfoActivity" />
+        <activity android:name=".activity.ResetNameActivity" />
+        <activity
+            android:name=".activity.GuideActivity"
+            android:theme="@style/TranslucentStatusTheme" />
+        <activity
+            android:name=".activity.ZhouBianActivity"
+            android:theme="@style/TranslucentStatusTheme" />
+        <activity
+            android:name=".activity.DuiHuanActivity"
+            android:theme="@style/TranslucentStatusTheme" />
+        <activity android:name=".activity.QianBaoActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f8fb">
+<com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout
+    android:id="@+id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_marginBottomPercent="12.8%w">
+
+
+   <com.qunyu.taoduoduo.pulltorefresh.PullableListView
+       android:id="@+id/lv_myAddress"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </com.qunyu.taoduoduo.pulltorefresh.PullableListView>
+</com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout>
+
+    <ImageView
+        android:id="@+id/iv_orderNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/dd_dd_kb"
+        app:layout_widthPercent="50%w"
+        app:layout_heightPercent="50%w"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="38%w"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_orderNull"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="您的记录为空"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="2%"
+        android:textSize="16sp"
+        android:layout_below="@+id/iv_orderNull"
+        android:textColor="@color/text_07"
+        app:layout_textSizePercent="4.5%w"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_addAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_heightPercent="12.8%w"
+        android:layout_alignParentBottom="true"
+        android:background="#FF464E"
+        app:layout_textSizePercent="4.1%w"
+        android:textColor="#ffffff"
+        android:text="添加新地址"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

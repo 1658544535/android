@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_heightPercent="29%w"
+        app:layout_paddingLeftPercent="3.38%w"
+        app:layout_paddingRightPercent="3.38%w">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:background="@color/line_02"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            app:layout_heightPercent="20.53%w"
+            app:layout_widthPercent="20.53%w"
+            app:srcCompat="@mipmap/default_load" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/text_02"
+            app:layout_marginLeftPercent="24.54%w"
+            app:layout_marginTopPercent="5%w"
+            app:layout_textSizePercent="3.38%w" />
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

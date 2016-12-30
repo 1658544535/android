@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="2.17%w"></View>
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_paddingBottomPercent="2.17%w"
+        app:layout_paddingLeftPercent="3.14%w"
+        app:layout_paddingRightPercent="3.14%w"
+        app:layout_paddingTopPercent="2.17%w">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@mipmap/dd_ms_ks"
+            android:scaleType="centerCrop"
+            app:layout_heightPercent="5.07%w"
+            app:layout_widthPercent="5.07%w" />
+
+        <TextView
+            android:id="@+id/tv_zt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/ms_ks"
+            android:textColor="@color/text_01"
+            app:layout_paddingLeftPercent="6%w"
+            app:layout_textSizePercent="4%w" />
+
+        <TextView
+            android:id="@+id/tv_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/ms_sw"
+            android:textColor="@color/text_04"
+            app:layout_paddingLeftPercent="6%w"
+            app:layout_textSizePercent="3.14%w" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

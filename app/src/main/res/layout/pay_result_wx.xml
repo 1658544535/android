@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        app:layout_heightPercent="12%w">
+
+        <ImageView
+            android:id="@+id/iv_head_left"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:src="@mipmap/dd_back"
+            app:layout_heightPercent="10.8%w"
+            app:layout_marginLeftPercent="0.87%w"
+            app:layout_paddingPercent="3%w"
+            app:layout_widthPercent="8.67%w" />
+
+        <TextView
+            android:id="@+id/tv_head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="8"
+            app:layout_textSizePercent="4.8%w" />
+
+        <TextView
+            android:id="@+id/tv_head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:visibility="gone"
+            app:layout_marginRightPercent="3.87%w"
+            app:layout_textSizePercent="4.4%w" />
+
+        <ImageView
+            android:id="@+id/iv_fenxiang"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/fenxiang"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/base_line" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_paystatus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/pay_success" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text"
+        android:textSize="17sp" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

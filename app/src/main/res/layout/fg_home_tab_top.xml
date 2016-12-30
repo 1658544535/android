@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_heightPercent="12%w">
+
+            <ImageView
+                android:id="@+id/iv_head_left"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                app:layout_heightPercent="10.8%w"
+                app:layout_marginLeftPercent="0.87%w"
+                app:layout_paddingPercent="3%w"
+                app:layout_widthPercent="8.67%w" />
+
+            <ImageView
+                android:id="@+id/tv_head_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/dd_tou"
+                app:layout_paddingPercent="3%w" />
+
+            <TextView
+                android:id="@+id/tv_head_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:visibility="gone"
+                app:layout_marginRightPercent="3.87%w"
+                app:layout_textSizePercent="4.4%w" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/base_line" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+        <!--<HorizontalScrollView-->
+        <!--android:id="@+id/hs_1"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--android:fadingEdge="none"-->
+        <!--android:scrollbars="none">-->
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_heightPercent="9%w"
+            app:tabBackground="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="1dp"
+            app:tabSelectedTextColor="@color/text_01" />
+        <!--</HorizontalScrollView>-->
+
+        <com.andbase.library.view.tabpager.AbTabPagerView
+            android:id="@+id/tabPagerView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+        <!--<com.andbase.library.view.sample.AbViewPager-->
+        <!--android:id="@+id/view_paper"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1" />-->
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:id="@+id/shibai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:background="@drawable/shap_corner_address"
+        android:text="重新加载" />
+
+    <ImageView
+        android:id="@+id/iv_hongbao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="10dp"
+        android:src="@mipmap/merry_hb_anniu" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

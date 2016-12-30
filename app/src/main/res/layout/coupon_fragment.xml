@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    >
+    <com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+    <com.qunyu.taoduoduo.pulltorefresh.PullableListView
+        android:id="@+id/lv_mycoupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f8fb"
+        android:divider="@color/base_bg"
+        android:dividerHeight="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        ></com.qunyu.taoduoduo.pulltorefresh.PullableListView>
+    </com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/layout_couponNull"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="15.7%w"
+            app:layout_widthPercent="23.5%"
+            android:layout_centerHorizontal="true"
+            app:layout_marginTopPercent="47.4%w"
+            android:src="@mipmap/null_coupon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:layout_textSizePercent="4.1%w"
+            app:layout_marginTopPercent="71.9%w"
+            android:textColor="#7B7D81"
+            android:text="暂无该类优惠券"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

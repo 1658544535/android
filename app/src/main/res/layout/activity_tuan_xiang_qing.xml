@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_above="@+id/head_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <include
+                android:id="@+id/head_layout"
+                layout="@layout/activity_ping_tuan_jie_guo_success"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/head_layout1"
+                layout="@layout/activity_ping_tuan_jie_guo_good"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/head_layout3"
+                layout="@layout/activity_tuan_xiang_qing_chen_yuan_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="2.66%w" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@mipmap/kt_huodongshuoming"
+                app:layout_heightPercent="30.67%w"
+                app:layout_marginTopPercent="2.66%w" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/head_layout4"
+        layout="@layout/activity_tuan_xiang_qing_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

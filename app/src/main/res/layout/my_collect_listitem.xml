@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="28.5%w"
+        app:layout_paddingLeftPercent="3.3%w"
+        app:layout_paddingRightPercent="3.3%w"
+        >
+
+        <ImageView
+            android:id="@+id/iv_shangpin_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/xian"
+            app:layout_widthPercent="17%"
+            app:layout_heightPercent="17%w"
+            app:layout_marginTopPercent="5.1%w"/>
+        <TextView
+            android:id="@+id/tv_shangpin_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="67.3%"
+            android:layout_toRightOf="@+id/iv_shangpin_logo"
+            android:layout_alignTop="@+id/iv_shangpin_logo"
+            app:layout_textSizePercent="3.3%w"
+            app:layout_marginLeftPercent="3.6%"
+            android:textColor="#1c1c1c"
+            android:lines="2"
+            android:text="商品标题"
+            />
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="52.9%"
+            app:layout_heightPercent="7.5%w"
+            app:layout_marginLeftPercent="3.6%"
+            android:layout_toRightOf="@+id/iv_shangpin_logo"
+            android:layout_alignBottom="@+id/iv_shangpin_logo"
+            android:background="@drawable/shap_corner_redwhite">
+            <TextView
+                android:id="@+id/tv_tuanNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="9.7%"
+                app:layout_textSizePercent="5.9%w"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_15"
+                android:text="2人团"
+                />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        <ImageView
+            android:id="@+id/iv_qukaituan"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="18%"
+            app:layout_heightPercent="7.5%w"
+            android:layout_toRightOf="@+id/iv_shangpin_logo"
+            android:layout_alignBottom="@+id/iv_shangpin_logo"
+            app:layout_marginLeftPercent="44%w"
+            android:src="@mipmap/qukaituan"/>
+        <ImageView
+            android:id="@+id/iv_collect_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="5.6%w"
+            app:layout_widthPercent="5.6%"
+            android:layout_alignBottom="@+id/iv_shangpin_logo"
+            android:layout_alignParentRight="true"
+            app:layout_textSizePercent="3.1%w"
+            android:textColor="#949494"
+            android:text="我的猜价:"
+            android:src="@mipmap/collect_select_icon"
+            />
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

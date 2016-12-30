@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_top"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@mipmap/dd_od_dfk"
+                app:layout_heightPercent="26.57%w" />
+
+            <include
+                android:id="@+id/head_layout"
+                layout="@layout/activity_order_detail_dizhi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginBottomPercent="2.66%w" />
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginBottomPercent="2.66%w">
+
+                <include
+                    android:id="@+id/head_layout"
+                    layout="@layout/activity_order_detail_sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginBottomPercent="2.66%w">
+
+                <include
+                    android:id="@+id/head_layout"
+                    layout="@layout/activity_order_detail_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/zf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginBottomPercent="2.66%w">
+
+                <include
+                    android:id="@+id/head_layout"
+                    layout="@layout/activity_order_detail_zf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </ScrollView>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/bottom_layout"
+            layout="@layout/activity_order_detail_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

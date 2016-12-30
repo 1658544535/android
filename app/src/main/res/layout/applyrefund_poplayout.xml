@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+    <ListView
+        android:id="@+id/lv_popuWindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shap_listview"
+        android:divider="#ffffff"
+        android:dividerHeight="0dp"
+        ></ListView>
+    </FrameLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_mycoupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/base_bg"
+        android:dividerHeight="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/layout_couponNull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/null_coupon"
+            app:layout_heightPercent="15.7%w"
+            app:layout_marginTopPercent="47.4%w"
+            app:layout_widthPercent="23.5%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/coa_nocou"
+            android:textColor="@color/gray_text"
+            app:layout_marginTopPercent="71.9%w"
+            app:layout_textSizePercent="4.1%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

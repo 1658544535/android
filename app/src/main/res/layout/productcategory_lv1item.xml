@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/lv1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="50%w">
+
+        <TextView
+            android:id="@+id/lv1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="20%"
+            android:layout_centerVertical="true"
+            android:maxEms="4"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="电动/遥控"
+            android:textColor="@color/classification_t"
+            android:textSize="13sp" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

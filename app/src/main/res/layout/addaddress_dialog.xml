@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/searchedt_background"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="4.1%w"
+            android:textColor="@color/text_02"
+            android:text="收货人 :"
+            app:layout_marginTopPercent="9.7%w"
+            app:layout_marginLeftPercent="14.5%"
+
+            />
+        <EditText
+            android:id="@+id/edt_shouhuoren"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="59.3%"
+            app:layout_heightPercent="7.8%w"
+            app:layout_marginLeftPercent="30.1%"
+            app:layout_marginTopPercent="8%w"
+            app:layout_textSizePercent="3.5%w"
+            android:hint="请输入收货人"
+            android:textColor="@color/btn_02"
+            android:padding="5dp"
+            android:textColorHint="@color/btn_02"
+            android:background="@drawable/shap_corner_address"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="4.1%w"
+            android:textColor="@color/text_02"
+            android:text="联系方式 :"
+            app:layout_marginTopPercent="21%w"
+            app:layout_marginLeftPercent="10.3%"
+
+            />
+        <EditText
+            android:id="@+id/edt_lianxifangshi"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="59.3%"
+            app:layout_heightPercent="7.8%w"
+            app:layout_marginLeftPercent="30.1%"
+            app:layout_marginTopPercent="20%w"
+            app:layout_textSizePercent="3.5%w"
+            android:hint="请输入联系方式"
+            android:padding="5dp"
+            android:maxEms="11"
+            android:digits="0123456789"
+            android:textColorHint="@color/btn_02"
+            android:textColor="@color/btn_02"
+            android:background="@drawable/shap_corner_address"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="4.1%w"
+            android:textColor="@color/text_02"
+            android:text="收货地址 :"
+            app:layout_marginTopPercent="32.3%w"
+            app:layout_marginLeftPercent="10.3%"
+            />
+
+        <TextView
+            android:id="@+id/tv_address1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="18%"
+            app:layout_heightPercent="8.1%w"
+            app:layout_marginLeftPercent="30.1%"
+            app:layout_marginTopPercent="30.7%w"
+            app:layout_textSizePercent="3.5%w"
+            android:maxEms="3"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:textColor="@color/btn_02"
+            android:background="@mipmap/shouhuo_spinner"/>
+
+        <TextView
+            android:id="@+id/tv_address2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="18%"
+            app:layout_heightPercent="8.1%w"
+            app:layout_marginLeftPercent="50.7%"
+            app:layout_marginTopPercent="30.7%w"
+            app:layout_textSizePercent="3.5%w"
+            android:maxEms="3"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:textColor="@color/btn_02"
+            android:background="@mipmap/shouhuo_spinner"/>
+
+        <TextView
+            android:id="@+id/tv_address3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="18%"
+            app:layout_heightPercent="8.1%w"
+            app:layout_marginLeftPercent="71.4%"
+            app:layout_marginTopPercent="30.7%w"
+            app:layout_textSizePercent="3.5%w"
+            android:maxEms="3"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:textColor="@color/btn_02"
+            android:background="@mipmap/shouhuo_spinner"/>
+        <EditText
+            android:id="@+id/edt_addressDetial"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="59.3%"
+            app:layout_heightPercent="13.6%w"
+            app:layout_marginLeftPercent="30.1%"
+            app:layout_marginTopPercent="41.1%w"
+            app:layout_textSizePercent="3.5%w"
+            android:hint="请输入详细地址"
+            android:padding="5dp"
+            android:lines="2"
+            android:textColorHint="@color/btn_02"
+            android:textColor="@color/btn_02"
+            android:background="@drawable/shap_corner_address"/>
+        <TextView
+            android:id="@+id/btn_commit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="54.7%"
+            app:layout_heightPercent="10.5%w"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:layout_marginBottomPercent="4.8%w"
+            android:gravity="center"
+            app:layout_textSizePercent="4.4%w"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_corner_dlbtn"
+            android:text="提交"/>
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

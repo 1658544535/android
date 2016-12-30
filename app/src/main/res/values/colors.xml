@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="base_red">#FF464E</color>
+    <color name="gray_text">#A0A0A0</color>
+    <color name="colorPrimary">#f4f8fb</color>
+    <color name="colorPrimaryDark">#f4f8fb</color>
+    <color name="colorAccent">#f4f8fb</color>
+    <color name="text_pay_success">#A8C850</color>
+    <color name="text_pay_fail">#E01858</color>
+    <color name="base_bg">#f4f8fb</color>
+    <color name="base_line">#E8E8EB</color>
+    <color name="base_line2">#E9E9E9</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="gray_bg">#CECECE</color>
+
+    <color name="text_01">#FF464E</color>
+    <color name="text_02">#1C1C1C</color>
+    <color name="text_03">#F85981</color>
+    <color name="text_04">#979797</color>
+    <color name="text_05">#333333</color>
+    <color name="text_06">#C4C4CB</color>
+    <color name="text_07">#9D9D9D</color>
+    <color name="text_08">#898989</color>
+    <color name="text_09">#949494</color>
+    <color name="text_10">#3E3E3E</color>
+    <color name="text_11">#8F8F8F</color>
+    <color name="text_12">#5F5F5F</color>
+    <color name="text_13">#666666</color>
+    <color name="text_14">#454545</color>
+    <color name="text_15">#595757</color>
+    <color name="text_16">#727171</color>
+    <color name="text_17">#676767</color>
+    <color name="text_18">#757575</color>
+    <color name="text_19">#F85A82</color>
+    <color name="text_20">#8C8C8C</color>
+    <color name="text_21">#FABE00</color>
+    <color name="text_22">#f6f6f6</color>
+    <color name="text_24">#1A1A64</color>
+    <color name="text_23">#999999</color>
+    <color name="text_30">#343434</color>
+    <color name="text_31">#2D2D2D</color>
+    <color name="text_32">#A9A9A9</color>
+    <color name="text_33">#515151</color>
+    <color name="text_34">#818181</color>
+    <color name="text_35">#ABABAB</color>
+    <color name="text_36">#040404</color>
+
+    <color name="line_03">#E4E4E4</color>
+    <color name="line_01">#E7E7E7</color>
+    <color name="line_02">#C9C9C9</color>
+    <color name="line_04">#E9E9E9</color>
+    <color name="line_05">#DCDDDD</color>
+
+    <color name="btn_01">#FF6B71</color>
+    <color name="btn_02">#9FA0A0</color>
+    <color name="btn_03">#C9CACA</color>
+    <color name="btn_04">#FFFEEE</color>
+    <color name="btn_05">#C9C9C9</color>
+
+    <color name="bg_01">#F6F6F6</color>
+    <color name="agd_blue">#36a9fb</color>
+    <color name="agd_yellow">#fec64b</color>
+
+    <color name="my_bg">#f2f2f2</color>
+    <color name="classification_t">#656566</color>
+
+    <color name="zb_red">#bd0900</color>
+    <color name="zb_blue">#00b9ef</color>
+    <color name="zb_yellow">#ffd900</color>
+    <color name="zb_dark_red">#7c0a00</color>
+</resources>

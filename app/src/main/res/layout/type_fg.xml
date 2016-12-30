@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_tp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/ll_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_paddingTopPercent="2%h">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_011"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_heightPercent="25%w">
+
+            <ImageView
+                android:id="@+id/iv_11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/default_load"
+                app:layout_heightPercent="70%h"
+                app:layout_paddingLeftPercent="5%h"
+                app:layout_paddingRightPercent="5%h"
+                app:layout_widthPercent="80%h" />
+
+            <TextView
+                android:id="@+id/tv_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="111"
+                android:textSize="12sp" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_022"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_heightPercent="25%w">
+
+            <ImageView
+                android:id="@+id/iv_12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/default_load"
+                app:layout_heightPercent="70%h"
+                app:layout_paddingLeftPercent="5%h"
+                app:layout_paddingRightPercent="5%h"
+                app:layout_widthPercent="80%h" />
+
+            <TextView
+                android:id="@+id/tv_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="111"
+                android:textSize="12sp" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_033"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_heightPercent="25%w">
+
+            <ImageView
+                android:id="@+id/iv_13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/default_load"
+                app:layout_heightPercent="70%h"
+                app:layout_paddingLeftPercent="5%h"
+                app:layout_paddingRightPercent="5%h"
+                app:layout_widthPercent="80%h" />
+
+            <TextView
+                android:id="@+id/tv_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="111"
+                android:textSize="12sp" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_044"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_heightPercent="25%w">
+
+            <ImageView
+                android:id="@+id/iv_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/default_load"
+                app:layout_heightPercent="70%h"
+                app:layout_paddingLeftPercent="5%h"
+                app:layout_paddingRightPercent="5%h"
+                app:layout_widthPercent="80%h" />
+
+            <TextView
+                android:id="@+id/tv_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="111"
+                android:textSize="12sp" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/ll_22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_paddingTopPercent="2%h">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_055"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_heightPercent="25%w">
+
+            <ImageView
+                android:id="@+id/iv_15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/default_load"
+                app:layout_heightPercent="70%h"
+                app:layout_paddingLeftPercent="5%h"
+                app:layout_paddingRightPercent="5%h"
+                app:layout_widthPercent="80%h" />
+
+            <TextView
+                android:id="@+id/tv_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="111"
+                android:textSize="12sp" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_066"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_heightPercent="25%w">
+
+            <ImageView
+                android:id="@+id/iv_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/default_load"
+                app:layout_heightPercent="70%h"
+                app:layout_paddingLeftPercent="5%h"
+                app:layout_paddingRightPercent="5%h"
+                app:layout_widthPercent="80%h" />
+
+            <TextView
+                android:id="@+id/tv_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="111"
+                android:textSize="12sp" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_077"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_heightPercent="25%w">
+
+            <ImageView
+                android:id="@+id/iv_17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/default_load"
+                app:layout_heightPercent="70%h"
+                app:layout_paddingLeftPercent="5%h"
+                app:layout_paddingRightPercent="5%h"
+                app:layout_widthPercent="80%h" />
+
+            <TextView
+                android:id="@+id/tv_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="111"
+                android:textSize="12sp" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_088"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_heightPercent="25%w">
+
+            <ImageView
+                android:id="@+id/iv_18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/ckqb"
+                app:layout_heightPercent="70%h"
+                android:padding="18dp"
+                app:layout_widthPercent="80%h" />
+
+            <TextView
+                android:id="@+id/tv_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="查看全部"
+                android:textSize="12sp" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

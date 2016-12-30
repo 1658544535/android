@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            app:layout_textSizePercent="4.8%w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_centerInParent="true" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/layout_search"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:descendantFocusability="blocksDescendants">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_05"></View>
+
+        <TextView
+            android:id="@+id/tv_seach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="4%w"
+            android:text="@string/search_product"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@mipmap/search_s"
+            android:textColor="@color/btn_02" />
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_05"></View>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv1_productCategory"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/my_bg"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@color/my_bg"
+            android:dividerHeight="1dp"></ListView>
+
+        <com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.qunyu.taoduoduo.pulltorefresh.PullableListView
+                android:id="@+id/lv2_productCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@color/white"
+                android:dividerHeight="30dp"></com.qunyu.taoduoduo.pulltorefresh.PullableListView>
+        </com.qunyu.taoduoduo.pulltorefresh.PullToRefreshLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="100%w" />
+
+
+    <TextView
+        android:id="@+id/tv_productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        app:layout_textSizePercent="8.14%w"
+        android:layout_below="@+id/iv_picture"
+        app:layout_marginPercent="3.7%w"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_textSizePercent="9.62%w"
+        android:layout_below="@+id/tv_productName"
+        android:textColor="@color/base_red"
+        app:layout_marginLeftPercent="3%w"
+        app:layout_marginBottomPercent="3%w"
+
+        />
+    <ImageView
+        android:id="@+id/iv_collect"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="14%w"
+        app:layout_heightPercent="14%w"
+        android:layout_below="@+id/tv_productName"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/cnxh_sc"
+        app:layout_marginRightPercent="3%w"
+
+        />
+</com.zhy.android.percent.support.PercentRelativeLayout>

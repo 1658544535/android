@@ -1,0 +1,61 @@
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f8fb">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.andbase.library.view.tabpager.AbTabPagerView
+            android:id="@+id/tabPagerView_aftersale"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            />
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="9.6%w"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="全部"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text_01"/>
+            <TextView
+                android:id="@+id/tv_shenhezhong"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="审核中"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_shengheguo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="审核通过"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_shenhebuguo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="审核不通过"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_wancheng"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="完成"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

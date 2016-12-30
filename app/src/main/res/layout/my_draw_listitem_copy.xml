@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_heightPercent="38.4%w"
+        app:layout_marginTopPercent="2.5%w"
+        app:layout_paddingLeftPercent="3.3%w"
+        app:layout_paddingRightPercent="3.3%w">
+
+        <ImageView
+            android:id="@+id/pintuan"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@mipmap/pintuan_product"
+            app:layout_heightPercent="3.7%w"
+            app:layout_marginTopPercent="5.8%"
+            app:layout_widthPercent="3.7%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pintuan"
+            android:text="拼团商品"
+            android:textColor="#5f5f5f"
+            app:layout_marginLeftPercent="2.0%"
+            app:layout_marginTopPercent="5.8%"
+            app:layout_textSizePercent="3.3%w" />
+
+        <TextView
+            android:id="@+id/tv_mydraw_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="进行中"
+            android:textColor="#ff464e"
+            app:layout_marginTopPercent="6.2%"
+            app:layout_textSizePercent="2.8%w" />
+
+        <View
+            android:id="@+id/xian"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/pintuan"
+            android:background="#e7e7e7"
+            app:layout_marginTopPercent="3.5%w"></View>
+
+        <ImageView
+            android:id="@+id/iv_mydraw_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/xian"
+            android:src="@mipmap/default_load"
+            app:layout_heightPercent="20%w"
+            app:layout_marginTopPercent="4.1%w"
+            app:layout_widthPercent="20%" />
+
+        <TextView
+            android:id="@+id/tv_mydraw_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_mydraw_logo"
+            android:layout_toRightOf="@+id/iv_mydraw_logo"
+            android:lines="2"
+            android:text="商品标题"
+            android:textColor="#1c1c1c"
+            app:layout_marginLeftPercent="3.6%"
+            app:layout_textSizePercent="3.3%w"
+            app:layout_widthPercent="67.3%" />
+
+        <TextView
+            android:id="@+id/tv_mydraw_proNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_mydraw_title"
+            android:layout_alignParentRight="true"
+            android:text="x1"
+            android:textColor="#949494"
+            app:layout_textSizePercent="3.1%w" />
+
+        <TextView
+            android:id="@+id/tv_mydraw_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_mydraw_logo"
+            android:layout_alignParentRight="true"
+            android:text="价格:"
+            android:textColor="#595757"
+            app:layout_textSizePercent="3.1%w" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e7e7"></View>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/layout_mydraw_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        app:layout_heightPercent="11%w">
+
+
+        <TextView
+            android:id="@+id/tv_shaitu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shap_coner_graywhite"
+            android:gravity="center"
+            android:text="我要晒图"
+            android:textColor="@color/text_08"
+            app:layout_heightPercent="6.8%w"
+            app:layout_marginRightPercent="3%w"
+            app:layout_paddingLeftPercent="2%"
+            app:layout_paddingRightPercent="2%"
+            app:layout_textSizePercent="3.3%w" />
+
+        <TextView
+            android:id="@+id/tv_shaitu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shap_coner_graywhite"
+            android:gravity="center"
+            android:text="我要晒图"
+            android:textColor="@color/text_08"
+            app:layout_heightPercent="6.8%w"
+            app:layout_marginRightPercent="3%w"
+            app:layout_paddingLeftPercent="2%"
+            app:layout_paddingRightPercent="2%"
+            app:layout_textSizePercent="3.3%w" />
+
+        <TextView
+            android:id="@+id/tv_zhongjian_Msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shap_corner_redwhite"
+            android:gravity="center"
+            android:text="中奖信息"
+            android:textColor="@color/text_01"
+            app:layout_heightPercent="6.8%w"
+            app:layout_marginRightPercent="3.5%w"
+            app:layout_paddingLeftPercent="2%"
+            app:layout_paddingRightPercent="2%"
+            app:layout_textSizePercent="3.3%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

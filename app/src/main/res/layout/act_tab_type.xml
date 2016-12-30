@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_line2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/base_line2"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="分类"
+            android:textColor="@color/text_35"
+            app:layout_heightPercent="9%w" />
+
+        <ImageView
+            android:id="@+id/ss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@mipmap/sss55" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <com.qunyu.taoduoduo.pulltorefresh.PullableGridView
+            android:id="@+id/gv_t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:horizontalSpacing="10dp"
+            android:listSelector="#00000000"
+            android:numColumns="4"
+            android:padding="10dp"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

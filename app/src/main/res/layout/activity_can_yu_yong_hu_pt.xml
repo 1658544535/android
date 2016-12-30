@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9.18%w">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="4.59%w"
+            app:layout_marginLeftPercent="3.86%w"
+            app:layout_widthPercent="4.59%w"
+            app:srcCompat="@mipmap/dd_gd_lb" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="center_vertical"
+            android:text="@string/cy_g"
+            android:textColor="@color/text_13"
+            app:layout_marginLeftPercent="1%w"
+            app:layout_textSizePercent="3.5%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_heightPercent="4.11%w" />
+</com.zhy.android.percent.support.PercentLinearLayout>

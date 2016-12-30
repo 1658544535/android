@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_bg">
+
+
+    <com.allure.lbanners.LMBanners
+        android:id="@+id/banners"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:auto_play="true"
+        app:canLoop="true"
+        app:durtion="5000"
+        app:horizontal_transitionEffect="accordion"
+        app:indicator_position="bottom_mid"
+        app:indicator_select="@drawable/page_indicator_select"
+        app:indicator_unselect="@drawable/page_indicator_unselect"
+        app:isVertical="false"
+        app:layout_heightPercent="55.56%w"
+        app:scroll_duration="66666"
+        app:srcCompat="@mipmap/default_load" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banners"
+        android:background="@color/white"
+        app:layout_minHeightPercent="27.05%w"
+        app:layout_paddingBottomPercent="1%w"
+        app:layout_paddingLeftPercent="4%w"
+        app:layout_paddingRightPercent="4%w"
+        app:layout_paddingTopPercent="3%w">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/text_02"
+            app:layout_textSizePercent="3.62%w" />
+
+
+        <TextView
+            android:id="@+id/tv_rensh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:text="@string/c_time"
+            android:textColor="@color/text_14"
+            app:layout_marginTopPercent="4.5%w"
+            app:layout_textSizePercent="3.38%w" />
+
+        <TextView
+            android:id="@+id/tv_js2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/tv_rensh"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:text="已结束"
+            android:textColor="@color/text_01"
+            android:visibility="gone"
+            app:layout_heightPercent="6.76%w"
+            app:layout_marginLeftPercent="3.62%w"
+            app:layout_marginTopPercent="3%w"
+            app:layout_textSizePercent="3.3%w"
+            app:layout_widthPercent="33%w" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/tv_good_xl"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/tv_rensh"
+            android:background="@mipmap/dd_t"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:textColor="@color/white"
+
+            app:layout_heightPercent="6.76%w"
+            app:layout_marginLeftPercent="3.62%w"
+            app:layout_marginTopPercent="3%w"
+            app:layout_textSizePercent="3.3%w"
+            app:layout_widthPercent="33%w">
+
+            <TextView
+                android:id="@+id/tv_s"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="88"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_paddingRightPercent="14%w"
+                app:layout_widthPercent="100%h" />
+
+
+            <TextView
+                android:id="@+id/tv_f"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_paddingLeftPercent="4%w"
+                app:layout_paddingRightPercent="16%w"
+                app:layout_widthPercent="100%h" />
+
+            <TextView
+                android:id="@+id/tv_m"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_paddingLeftPercent="4%w"
+                app:layout_paddingRightPercent="15%w"
+                app:layout_widthPercent="100%h" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+        <!--<TextView
+            android:id="@+id/tv_good_xl"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/tv_renshu"
+            android:background="@mipmap/dd_t"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            app:layout_heightPercent="6.76%w"
+            app:layout_marginLeftPercent="3.62%w"
+            app:layout_marginTopPercent="3%w"
+            app:layout_textSizePercent="3.3%w"
+            app:layout_widthPercent="33%w" />-->
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_rensh"
+            android:maxLines="1"
+            android:text="@string/c_jg"
+            android:textColor="@color/text_14"
+            app:layout_marginTopPercent="4.5%w"
+            app:layout_textSizePercent="3.38%w" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_rensh"
+            android:layout_toRightOf="@+id/textView12"
+            android:maxLines="1"
+            android:textColor="@color/text_01"
+            app:layout_marginLeftPercent="3.62%w"
+            app:layout_marginTopPercent="4.5%w"
+            app:layout_textSizePercent="4%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

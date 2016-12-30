@@ -1,0 +1,408 @@
+apply plugin: 'com.android.application'
+android {
+    //为了解决部分第三方库重复打包了META-INF的问题
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        applicationId "com.qunyu.taoduoduo"
+        minSdkVersion 19
+        targetSdkVersion 19
+        versionCode 1410
+        versionName "1.41"
+        multiDexEnabled true
+        //极光//bugly
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "8ffb1532d111f064c4e06861", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+        multiDexEnabled true
+    }
+    /*productFlavors {
+        XiaoMi {}
+        UMeng {}
+        wandoujia {}
+        Baidu {}
+        Lenovo {}
+        c360 {}
+        vivo {}
+        OPPO {}
+        Sougou {}
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+    }*/
+    //签名信息
+    signingConfigs {
+        // debug签名信息
+        debugConfig {
+            storeFile file("F:\\签名\\androidkevin.keystore")
+            storePassword "ruiyukeji123"
+            keyAlias "androidkevin.keystore"
+            keyPassword "ruiyukeji123"
+        }
+        // 发布版签名
+        releaseConfig {
+            storeFile file("F:\\签名\\androidkevin.keystore")
+            storePassword "ruiyukeji123"
+            keyAlias "androidkevin.keystore"
+            keyPassword "ruiyukeji123"
+        }
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDir "libs"
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot("tests")
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot("build-types/debug")
+        release.setRoot("build-types/release")
+
+        useLibrary "org.apache.http.legacy"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            signingConfig signingConfigs.releaseConfig
+        }
+        debug {
+            signingConfig signingConfigs.debugConfig
+        }
+    }
+
+}
+
+
+repositories {
+    flatDir {
+        dir "libs"
+    }
+    maven {
+        url "https://jitpack.io"
+    }
+
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+apply plugin: 'com.neenbedankt.android-apt'
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:multidex:1.0.1'
+    //状态栏
+    //主框架
+    compile(name: "andbase2.0.2", ext: "aar")
+    //快速注解
+    //友盟
+    //    compile project(':PushSDK')
+    //    compile project(':social_sdk_library_project')
+    //百分比布局
+    //工具类
+    //轮播
+    //图片加载
+    //eventbus
+    //流式标签布局控件
+    compile files('libs/umeng_social_viewv6.0.0.jar')
+    compile files('libs/umeng_social_netv6.0.0.jar')
+    compile files('libs/umeng_social_apiv6.0.0.jar')
+    compile files('libs/SocialSDK_umengsina.jar')
+    compile files('libs/SocialSDK_umengqq.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    // -------------------- 以下三个库是必须依赖的 ----------------------------
+    // -------------------- 以上三个库是必须依赖的 ----------------------------
+    // 目前支持常见的 4 种图片加载库，必须在下面四个图片加载库中选择一个添加依赖
+    //compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //    compile 'com.squareup.picasso:picasso:2.5.2'
+    //    compile 'org.xutils:xutils:3.3.36'
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile files('libs/alipaySingle-20161009.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.jaeger.statusbaruitl:library:1.0.0'
+    compile 'com.android.support:palette-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
+    compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    compile 'com.github.lovetuzitong:MultiImageSelector:1.2'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.zhy:percent-support-extends:1.1.1'
+    compile 'com.blankj:utilcode:1.2.1'
+    compile 'com.allure0:LMBanners:1.0.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    compile 'com.meiqia:meiqiasdk:3.3.6@aar'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    //图片缩放
+    compile 'com.github.chrisbanes:PhotoView:1.3.0'
+    compile 'cn.jiguang:jpush:2.2.0' // 极光
+    compile project(':PushSDK')
+    //bugly
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
+//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.0.0
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+    compile 'com.android.support:multidex:1.0.1'
+    compile project(':sdk')
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.4'
+    compile 'com.github.iwgang:familiarrecyclerview:1.3.1'
+    compile "me.henrytao:smooth-app-bar-layout:24.1.0.0"
+}
+
+
+def bakPath = file("${buildDir}/bakApk/")
+
+/**
+ * you can use assembleRelease to build you base apk
+ * use tinkerPatchRelease -POLD_APK=  -PAPPLY_MAPPING=  -PAPPLY_RESOURCE= to build patch
+ * add apk from the build/bakApk
+ */
+ext {
+    // for some reason, you may want to ignore tinkerBuild, such as instant run debug build?
+    tinkerEnabled = true
+
+    // for normal build
+    // old apk file to build patch apk
+    tinkerOldApkPath = "${bakPath}/app-release-1215-10-40-16.apk"
+    // proguard mapping file to build patch apk
+    tinkerApplyMappingPath = "${bakPath}/app-debug-1130-14-23-45-mapping.txt"
+    // resource R.txt to build patch apk, must input if there is resource changed
+    tinkerApplyResourcePath = "${bakPath}/app-release-1215-10-40-16-R.txt"
+
+    // only use for build all flavor, if not, just ignore this field
+    tinkerBuildFlavorDirectory = "${bakPath}/app-1124-23-03-52"
+}
+
+def getOldApkPath() {
+    return hasProperty("OLD_APK") ? OLD_APK : ext.tinkerOldApkPath
+}
+
+def getApplyMappingPath() {
+    return hasProperty("APPLY_MAPPING") ? APPLY_MAPPING : ext.tinkerApplyMappingPath
+}
+
+def getApplyResourceMappingPath() {
+    return hasProperty("APPLY_RESOURCE") ? APPLY_RESOURCE : ext.tinkerApplyResourcePath
+}
+
+
+def buildWithTinker() {
+    return hasProperty("TINKER_ENABLE") ? TINKER_ENABLE : ext.tinkerEnabled
+}
+
+def getTinkerBuildFlavorDirectory() {
+    return ext.tinkerBuildFlavorDirectory
+}
+
+/**
+ * 更多Tinker插件详细的配置，参考：https://github.com/Tencent/tinker/wiki
+ */
+if (buildWithTinker()) {
+    apply plugin: 'com.tencent.bugly.tinker-support'
+    // 依赖tinker插件
+    apply plugin: 'com.tencent.tinker.patch'
+
+    tinkerSupport {
+        // 开启tinker-support插件，默认值true
+        enable = true
+        // 是否编译完成后，归档apk到指定目录，默认值false
+        autoBackupApk = false
+        // 指定归档目录，默认值当前module的子目录tinker
+        // backupApkDir = 'tinker'
+        // 是否启用覆盖tinkerPatch配置功能，默认值false
+        // 开启后tinkerPatch配置不生效，即无需添加tinkerPatch
+        overrideTinkerPatchConfiguration = true
+        // 编译补丁包时，必需指定基线版本的apk，默认值为空
+        // 如果为空，则表示不是进行补丁包的编译
+        // @{link tinkerPatch.oldApk }
+        baseApk = getOldApkPath()
+        // 对应tinker插件applyMapping
+        baseApkProguardMapping = getApplyMappingPath()
+        // 对应tinker插件applyResourceMapping
+        baseApkResourceMapping = getApplyResourceMappingPath()
+        tinkerId = "tinker1410"
+    }
+
+    // 全局信息相关配置项
+    tinkerPatch {
+        oldApk = getOldApkPath() //必选， 基准包路径
+
+        ignoreWarning = false // 可选，默认false
+
+        useSign = true // 可选，默认true， 验证基准apk和patch签名是否一致
+
+        // 编译相关配置项
+        buildConfig {
+            //applyMapping = getApplyMappingPath() //  可选，设置mapping文件，建议保持旧apk的proguard混淆方式
+            applyResourceMapping = getApplyResourceMappingPath() // 可选，设置R.txt文件，通过旧apk文件保持ResId的分配
+            tinkerId = "tinker1410" // 必选，默认为null
+
+        }
+
+        // dex相关配置项
+        dex {
+            dexMode = "jar" // 可选，默认为jar
+            usePreGeneratedPatchDex = false // 可选，默认为false
+            pattern = ["classes*.dex",
+                       "assets/secondary-dex-?.jar"]
+            // 必选
+            loader = ["com.tencent.tinker.loader.*",
+                      "com.tencent.bugly.hotfix.SampleApplication",
+            ]
+        }
+
+        // lib相关的配置项
+        lib {
+            pattern = ["lib/armeabi/*.so"]
+        }
+
+        // res相关的配置项
+        res {
+            pattern = ["res/*", "assets/*", "resources.arsc", "AndroidManifest.xml"]
+            ignoreChange = ["assets/sample_meta.txt"]
+            largeModSize = 100
+        }
+
+        // 用于生成补丁包中的'package_meta.txt'文件
+        packageConfig {
+            configField("patchMessage", "tinker is sample to use")
+
+            configField("platform", "all")
+
+            configField("patchVersion", "1.0")
+        }
+
+        // 7zip路径配置项，执行前提是useSign为true
+        sevenZip {
+            zipArtifact = "com.tencent.mm:SevenZip:1.1.10" // optional
+            //  path = "/usr/local/bin/7za" // optional
+        }
+
+    }
+}
+
+List<String> flavors = new ArrayList<>();
+project.android.productFlavors.each { flavor ->
+    flavors.add(flavor.name)
+}
+boolean hasFlavors = flavors.size() > 0
+/**
+ * bak apk and mapping
+ */
+android.applicationVariants.all { variant ->
+    /**
+     * task type, you want to bak
+     */
+    def taskName = variant.name
+    def date = new Date().format("MMdd-HH-mm-ss")
+
+    tasks.all {
+        if ("assemble${taskName.capitalize()}".equalsIgnoreCase(it.name)) {
+
+            it.doLast {
+                copy {
+                    def fileNamePrefix = "${project.name}-${variant.baseName}"
+                    def newFileNamePrefix = hasFlavors ? "${fileNamePrefix}" : "${fileNamePrefix}-${date}"
+
+                    def destPath = hasFlavors ? file("${bakPath}/${project.name}-${date}/${variant.flavorName}") : bakPath
+                    from variant.outputs.outputFile
+                    into destPath
+                    rename { String fileName ->
+                        fileName.replace("${fileNamePrefix}.apk", "${newFileNamePrefix}.apk")
+                    }
+
+                    from "${buildDir}/outputs/mapping/${variant.dirName}/mapping.txt"
+                    into destPath
+                    rename { String fileName ->
+                        fileName.replace("mapping.txt", "${newFileNamePrefix}-mapping.txt")
+                    }
+
+                    from "${buildDir}/intermediates/symbols/${variant.dirName}/R.txt"
+                    into destPath
+                    rename { String fileName ->
+                        fileName.replace("R.txt", "${newFileNamePrefix}-R.txt")
+                    }
+                }
+            }
+        }
+    }
+}
+project.afterEvaluate {
+    //sample use for build all flavor for one time
+    if (hasFlavors) {
+        task(tinkerPatchAllFlavorRelease) {
+            group = 'tinker'
+            def originOldPath = getTinkerBuildFlavorDirectory()
+            for (String flavor : flavors) {
+                def tinkerTask = tasks.getByName("tinkerPatch${flavor.capitalize()}Release")
+                dependsOn tinkerTask
+                def preAssembleTask = tasks.getByName("process${flavor.capitalize()}ReleaseManifest")
+                preAssembleTask.doFirst {
+                    String flavorName = preAssembleTask.name.substring(7, 8).toLowerCase() + preAssembleTask.name.substring(8, preAssembleTask.name.length() - 15)
+                    project.tinkerPatch.oldApk = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-release.apk"
+                    project.tinkerPatch.buildConfig.applyMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-release-mapping.txt"
+                    project.tinkerPatch.buildConfig.applyResourceMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-release-R.txt"
+
+                }
+
+            }
+        }
+
+        task(tinkerPatchAllFlavorDebug) {
+            group = 'tinker'
+            def originOldPath = getTinkerBuildFlavorDirectory()
+            for (String flavor : flavors) {
+                def tinkerTask = tasks.getByName("tinkerPatch${flavor.capitalize()}Debug")
+                dependsOn tinkerTask
+                def preAssembleTask = tasks.getByName("process${flavor.capitalize()}DebugManifest")
+                preAssembleTask.doFirst {
+                    String flavorName = preAssembleTask.name.substring(7, 8).toLowerCase() + preAssembleTask.name.substring(8, preAssembleTask.name.length() - 13)
+                    project.tinkerPatch.oldApk = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-debug.apk"
+                    project.tinkerPatch.buildConfig.applyMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-debug-mapping.txt"
+                    project.tinkerPatch.buildConfig.applyResourceMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-debug-R.txt"
+                }
+
+            }
+        }
+    }
+}
+

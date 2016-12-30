@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="5%w"
+        app:layout_heightPercent="16%w"
+        app:layout_marginLeftPercent="4.9%"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/iv_logistics_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logistics"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#cecece"
+            ></View>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginLeftPercent="3.9%"
+        app:layout_marginRightPercent="3.9%"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_logistics_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="3.6%w"
+            android:textColor="#999999"
+            android:text="物流信息"/>
+        <TextView
+            android:id="@+id/tv_logistics_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_textSizePercent="3.6%w"
+            app:layout_marginTopPercent="3.6%w"
+            android:textColor="#999999"
+            android:text="物流时间"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
